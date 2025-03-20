@@ -80,7 +80,7 @@ public class FileUploadServlet extends HttpServlet {
                 }
             }
 
-            // Test MySQL connection with UTC-4 offset
+            // Test MySQL connection with UTC-4 offset - Assignment 1 implementation. Returns current time
             String timeOffsetResult = testConnectionMySQL(-4);
             if (timeOffsetResult != null) {
                 out.write("<br>✅ Database connection test successful.");
@@ -151,7 +151,7 @@ public class FileUploadServlet extends HttpServlet {
     }
 
     /**
-     * Tests the MySQL connection and retrieves the system clock time with UTC-4 offset.
+     * Tests the MySQL connection and retrieves the system clock time with UTC-4 offset. From assignment 1
      */
     public String testConnectionMySQL(int utc_offset) {
         String connectionHost = "database-1.c3uyoouqibxo.us-east-2.rds.amazonaws.com"; // MySQL RDS endpoint
